@@ -14,11 +14,11 @@ public class Kisi implements Serializable{
     private String cinsiyet;
     private String tarih;
     private ArrayList<Kisi> arkadaslarim;
-    private String resim;
+    private int resim;
     private String url;
 
 
-    public Kisi(String isim, String parola, String email, String cinsiyet, String tarih, String resim,String url) {
+    public Kisi(String isim, String parola, String email, String cinsiyet, String tarih, int resim,String url) {
         this.isim = isim;
         this.parola = parola;
         this.email = email;
@@ -46,11 +46,11 @@ public class Kisi implements Serializable{
         this.isim = isim;
     }
 
-    public String getResim() {
+    public int getResim() {
         return resim;
     }
 
-    public void setResim(String resim) {
+    public void setResim(int resim) {
         this.resim = resim;
     }
 
@@ -98,6 +98,8 @@ public class Kisi implements Serializable{
     {
         arkadaslarim.add(k);
     }
+
+    public void arkadasSil(int i) { arkadaslarim.remove(i);}
 }
 
 

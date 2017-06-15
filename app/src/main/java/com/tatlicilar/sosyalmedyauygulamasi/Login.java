@@ -59,10 +59,10 @@ public class Login extends AppCompatActivity {
 
     public void kisileriOlustur(){
 
-        Kisi k1 = new Kisi("Rümeysa","1234","rumeysa@gmail.com","Kadın","07.01.1998","misty","www.google.com");
-        Kisi k2 = new Kisi("Cici","5678","cici@gmail.com","Kadın","08.01.1998","sailormoon","www.facebook.com");
-        Kisi k3 = new Kisi("Bici","9101","bici@gmail.com","Erkek","09.01.1998","","www.twitter.com");
-        Kisi k4 = new Kisi("Neval","1112","neval@gmail.com","Kadın","10.01.1998","angel","www.linkedin.com");
+        Kisi k1 = new Kisi("Rümeysa","1234","rumeysa@gmail.com","Kadın","07.01.1998",R.drawable.misty,"http://www.google.com");
+        Kisi k2 = new Kisi("Cici","5678","cici@gmail.com","Kadın","08.01.1998",R.drawable.sailormoon,"http://www.facebook.com");
+        Kisi k3 = new Kisi("Bici","9101","bici@gmail.com","Erkek","09.01.1998",R.drawable.mask,"http://www.twitter.com");
+        Kisi k4 = new Kisi("Neval","1112","neval@gmail.com","Kadın","10.01.1998",R.drawable.angel,"https://github.com/Surinovi");
 
         k1.arkadasEkle(k3);
         k1.arkadasEkle(k4);
